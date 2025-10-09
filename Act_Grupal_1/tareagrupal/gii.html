@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="gi.css">
+
+    <title>Document</title>
+    
+</head>
+
+<body>
+
+    <h1>Formulario de contacto</h1>
+
+    <p>
+<strong>¿Por qué contactarnos?</strong><br><br>
+Llena este formulario para consultas, sugerencias o informacion sobre actividades escolares
+    </p>
+
+     <form action="">
+
+        <label for="marco">Nombre:</label><br><br>
+        <input type="text" id="nombre" name="marco">
+        <br><br>
+
+        <label for="apellido">Apellidos:</label><br><br>
+        <input type="text" id="apellido" name="apellido">
+        <br><br>
+
+        <!-- Email -->
+        <label for="correo">Correo:</label><br><br>
+        <input type="email" id="correo" name="correo">
+        <br><br>
+
+        <!-- Número -->
+        <label for="numero de telefono">Numero de teléfono:</label><br><br>
+        <input type="number" id="numero de telefono" name="numero de telefono">
+        <br><br>
+
+        <!-- Fecha -->
+        <label for="fecha">Fecha de contacto:</label> <br><br>
+        <input type="date" id="fecha" name="fecha" placeholder="dd- mm- aaaa">
+    
+        <!-- Selección (radio) -->
+        <p>Género:</p>
+        <input type="radio" id="masculino" name="genero" value="M">
+        <label for="masculino">Masculino</label><br><br>
+        <input type="radio" id="femenino" name="genero" value="F">
+        <label for="femenino">Femenino</label><br><br>
+        <input type="radio" id="otro" name="genero" value="O">
+        <label for="femenino">Otro</label><br><br>
+
+        <!-- Selección múltiple (checkbox) -->
+        <p>Tipo de consulta:</p>
+        <input type="checkbox" id="Información" name="interes" value="Información">
+        <label for="Información">Información</label><br><br>
+        <input type="checkbox" id="Reclamo" name="interes" value="Reclamo">
+        <label for="Reclamo">Reclamo</label><br><br>
+        <input type="checkbox" id="Sugerencias" name="interes" value="Sugerencias">
+        <label for="Sugerencias">Sugerencias</label><br><br>
+
+        <!-- Lista desplegable -->
+        <label for="Motivo de contacto">Motivo de contacto:</label>
+        <select id="Motivo de contacto" name="Motivo de contacto">
+            <option value="Consulta general">Consulta general</option>
+            <option value="Dudas Académicas">Dudas Académicas</option>
+            <option value="consultas al profesor">consultas al profesor</option>
+        </select>
+
+          <!-- Formulario para adjuntar archivo -->
+        <p>Adjuntar documento:</p>
+        <label for="archivo">Selecciona un archivo:</label>
+        <input type="file" id="archivo" name="archivo" accept=".pdf,.doc,.docx,.txt">
+        <br><br>
+        <button type="submit">Subir Documento</button>
+ 
+        <!-- Área de texto -->
+        <label for="comentarios">Comentarios:</label><br>
+        <textarea id="comentarios" name="comentarios" rows="4" cols="40" placeholder="Escribe aquí tus comentarios..."></textarea>
+        <br><br>
+
+        <!-- Botón -->
+        <button type="submit">Enviar</button>
+        <button type="reset">Cancelar</button>
+    </form>
+
+    <a href="maa.html">Volver</a>
+
+</body>
+</html>

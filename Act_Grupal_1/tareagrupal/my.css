@@ -1,0 +1,11 @@
+*{
+    place-items:center;
+}
+.azul{
+    background-color: blue;
+    color: antiquewhite;
+}
+
+a {
+    place-items:center;
+}

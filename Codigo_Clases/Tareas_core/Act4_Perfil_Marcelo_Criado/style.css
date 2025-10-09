@@ -1,0 +1,101 @@
+.contenedor {
+    width: 600px;
+    margin: 50px auto;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+}
+
+.lhorizontal {
+    height: 80px;
+    background-color: #00bcd4;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+}
+
+.perfil {
+    padding-top: 80px;
+    background-color: white;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 0 0 10px 10px;
+    padding: 20px;
+}
+
+.perfil h1 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.perfil h2 {
+    font-size: 16px;
+    color: gray;
+    margin-bottom: 10px;
+}
+
+.perfil h3 {
+    font-size: 14px;
+    font-weight: normal;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.perfil p, a {
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.perfil > img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid white;
+    object-fit: cover;
+    position: absolute;
+    top: 90px;
+    right: 62%;
+}
+
+.contenido{
+    position: relative;
+    top: 10px;
+}
+
+.boton {
+    width: 80px;
+    height: 30px;
+    background-color: rgb(192, 189, 189);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3px;
+}
+
+.boton > a{
+    text-decoration: none;
+    color: black;
+}
+
+.centrado{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 60px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.boton1 {
+    width: 80px;
+    height: 30px;
+    background-color: rgb(192, 189, 189);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3px;
+}
+
+.boton1 > a{
+    text-decoration: none;
+    color: black;
+}

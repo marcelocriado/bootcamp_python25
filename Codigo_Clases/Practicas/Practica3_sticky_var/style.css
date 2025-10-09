@@ -1,0 +1,29 @@
+.nav-bar{
+    width: 600px;
+    background-color: wheat;
+    margin: 0 auto;
+    position: sticky;
+    top: 10px;
+}
+
+.b-box{
+    border: 1px solid black;
+}
+
+.f-box{
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    gap: 50px;
+}
+
+.clase{
+    display: flex;
+    width: 600px;
+    text-align: center;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    margin: 0 auto;
+}

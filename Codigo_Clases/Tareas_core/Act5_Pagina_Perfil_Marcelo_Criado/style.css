@@ -1,0 +1,251 @@
+/* Barra superior */
+.navbar{
+    padding: 15px 20px;
+    background-color: rgb(36, 35, 35);
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.navbar-nav p{
+    color: white;
+}
+
+.nav-item a{
+    text-decoration: none;
+    color: white;
+} 
+
+/* Estilo main */
+.container-fluid{
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid black;
+}
+
+.row{
+    justify-content: center;
+}
+
+/* Contenido - Tarjeta de usuario */
+.lhorizontal {
+    height: 80px;
+    background-color: #00bcd4;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+}
+
+.perfil {
+    padding-top: 90px;
+    background-color: white;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 0 0 10px 10px;
+    padding: 20px;
+}
+
+.perfil h1 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.perfil h2 {
+    font-size: 16px;
+    color: gray;
+    margin-bottom: 10px;
+}
+
+.perfil h3 {
+    font-size: 14px;
+    font-weight: normal;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.perfil p, a {
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.perfil > img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid white;
+    object-fit: cover;
+    position: absolute;
+    bottom: 62%;
+}
+
+.contenido{
+    position: relative;
+    top: 40px;
+}
+
+.boton {
+    width: 100px;
+    height: 30px;
+}
+
+.boton > a{
+    text-decoration: none;
+    color: #00bcd4;
+    display: flex;
+    gap: 5px;
+}
+
+.boton > svg{
+    margin-right: 5px;
+    color: #00bcd4;
+}
+
+/* Contenido - Estudios */
+.tarjeta-estudio {
+    background-color: white;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    display: flex;
+    align-content: center;
+    padding: 20px;
+}
+
+.tarjeta-estudio h1 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.tarjeta-estudio h2 {
+    font-size: 16px;
+    color: black;
+    margin-top: 15px;
+}
+
+.tarjeta-estudio h3 {
+    font-size: 14px;
+    font-weight: normal;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.tarjeta-estudio p, a {
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+/* Contenido - solicitud de amistad */
+.solicitud {
+    padding-top: 90px;
+    background-color: white;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.solicitud h2{
+    font-size: 26px;
+    color: black;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.soli-img{
+    padding: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+.soli-img > img{
+    height: 40px;
+    width: 40px;
+    border-radius: 20%;
+    border: 2px solid #00bcd4;
+    object-fit: cover;
+}
+
+.soli-img > p{
+    text-align: center;
+    margin: 0;
+}
+
+.box{
+    display: flex;
+    margin-left: auto;
+    gap: 3px;
+}
+
+.box > svg{
+    height: 30px;
+    width: 30px;
+    margin: 3px;
+}
+
+/* Contenido - amistades */
+.amistad {
+    padding-top: 90px;
+    background-color: white;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.amistad h2{
+    font-size: 26px;
+    color: black;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.ami-img{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.ami-img > img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 1px solid black;
+    object-fit: cover;
+}
+
+.ami-img > svg{
+    height: 30px;
+    width: 30px;
+    margin: 3px;
+}
+
+.ami-img > p{
+    text-align: center;
+    margin: 0;
+}
+
+/* Pagina no encontrada */
+.centrado{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 60px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.boton1 {
+    width: 80px;
+    height: 30px;
+    background-color: rgb(192, 189, 189);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3px;
+}
+
+.boton1 > a{
+    text-decoration: none;
+    color: black;
+}

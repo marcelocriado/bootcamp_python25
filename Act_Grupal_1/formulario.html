@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulario de contacto</title>
+</head>
+
+<body>
+    <nav id="navbar">
+        <span>
+            <a href="informe.html">Informe de notas</a>
+        </span>
+        <span>
+            <a href="actividades.html">Actividades</a>
+        </span>
+        <span>
+            <a href="formulario.html">Contacto</a>
+        </span>
+        <span>
+            <a href="">Preguntas frecuentes</a>
+        </span>
+    </nav>
+
+    <main>
+        <div style="text-align: center;">
+            <h1>Formulario de contacto</h1>
+            <p>
+                <strong>¿Por qué contactarnos?</strong>
+                <br><br>
+                Llena este formulario para consultas, sugerencias o informacion sobre actividades escolares
+            </p>
+        </div>
+        <hr>
+        <div id="form">
+            <form action="#" method="post">
+                <div>
+                    <label for="marco">Nombre:</label>
+                    <input type="text" id="nombre" name="marco">
+                </div>
+
+                <div>
+                    <label for="apellido">Apellidos:</label>
+                    <input type="text" id="apellido" name="apellido">
+                </div>
+
+                <!-- Email -->
+                <div>
+                    <label for="correo">Correo:</label>
+                    <input type="email" id="correo" name="correo" placeholder="emai@gmail.com">
+                </div>
+
+                <!-- Número -->
+                <div>
+                    <label for="numero de telefono">Numero de teléfono:</label>
+                    <input type="number" id="numero de telefono" name="numero de telefono" placeholder="+569">
+                </div>
+
+                <!-- Fecha -->
+                <div>
+                    <label for="fecha">Fecha de contacto:</label> 
+                    <input type="date" id="fecha" name="fecha" placeholder="dd- mm- aaaa">
+                </div>
+
+                <!-- Selección (radio) -->
+                <div>
+                    <label>Género:</label>
+                    <input type="radio" id="masculino" name="genero" value="M">
+                    <label for="masculino">Masculino</label>
+                    <input type="radio" id="femenino" name="genero" value="F">
+                    <label for="femenino">Femenino</label>
+                    <input type="radio" id="otro" name="genero" value="O">
+                    <label for="femenino">Otro</label>
+                </div>
+
+                <!-- Selección múltiple (checkbox) -->
+                <div>
+                    <label>Tipo de consulta:</label>
+                    <input type="checkbox" id="Información" name="interes" value="Información">
+                    <label for="Información">Información</label>
+                    <input type="checkbox" id="Reclamo" name="interes" value="Reclamo">
+                    <label for="Reclamo">Reclamo</label>
+                    <input type="checkbox" id="Sugerencias" name="interes" value="Sugerencias">
+                    <label for="Sugerencias">Sugerencias</label>
+                </div>
+
+                <!-- Lista desplegable -->
+                <div>
+                    <label for="Motivo de contacto">Motivo de contacto:</label>
+                    <select id="Motivo de contacto" name="Motivo de contacto">
+                        <option value="Consulta general">Consulta general</option>
+                        <option value="Dudas Académicas">Dudas Académicas</option>
+                        <option value="consultas al profesor">consultas al profesor</option>
+                    </select>
+                </div>
+
+                <!-- Formulario para adjuntar archivo -->
+                <div>
+                    <label>Adjuntar documento:</label>
+                    <label for="archivo">Selecciona un archivo:</label>
+                    <input type="file" id="archivo" name="archivo" accept=".pdf,.doc,.docx,.txt">
+                    <button type="submit">Subir Documento</button>
+                </div>
+
+                <!-- Área de texto -->
+                <div class="comentarios">
+                    <label for="comentarios">Comentarios:</label>
+                    <br>
+                    <textarea id="comentarios" name="comentarios" rows="4" cols="40" placeholder="Escribe aquí tus comentarios..."></textarea>
+                </div>
+
+                <!-- Botón -->
+                <div style="text-align: center;">
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Cancelar</button>
+                </div>
+            </form>
+        </div>
+        <br>
+        <div style="text-align: center;">
+            <a href="index.html" class="link">Volver al Home</a>
+        </div>   
+        <br>
+    </main>
+    <footer id="footer">
+        <p>
+            © 2025 Colegio San Juan | Todos los derechos reservados
+        </p>
+    </footer>
+</body>
+</html>

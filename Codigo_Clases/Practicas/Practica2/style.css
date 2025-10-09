@@ -1,0 +1,59 @@
+.contenedor{
+    padding: 10px;
+    margin: 0 auto;
+    width: 600px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.fila{
+    border: 2px solid black;
+    padding: 15px;
+    display: flex;
+    gap: 30px;
+    border-radius: 5px;
+}
+
+.link{
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 15px;
+    width: 200px;
+}
+
+.caja{
+    border: 2px solid black;
+    border-radius: 5px;
+    display: flex;
+    padding: 15px;
+    justify-content: space-around;
+}
+
+.vertical{
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 35%;
+    height: 35%;
+    padding: 15px;
+}
+
+.parrafo{
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px;
+}
+
+.horizontal{
+    border: 2px solid black;
+    border-radius: 5px;
+    display: flex;
+    padding: 15px;
+    justify-content: space-around;
+}
+
+.cajita{
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 15px;
+}
