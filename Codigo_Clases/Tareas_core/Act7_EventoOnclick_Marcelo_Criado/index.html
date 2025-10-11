@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Petlopedia - Inicio</title>
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <h2>Petlopedia</h2>
+            <div class="searchbar">
+                <form action="#" method="post">
+                    <div>
+                        <input type="email" id="busqueda" name="busqueda" placeholder="Buscar mascotas" style="width: 700px;"/>
+                    </div>
+                </form>
+            </div>
+            <div class="btnend">
+                <button id="login">Iniciar Sesion</button>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="contenedor">
+            <div>
+                <div class="card">
+                    <div>
+                        <h1>Gato Atigrado</h1>
+                        <h2><em>Sustantivo</em></h2>
+                        <h3>Plural - Gatos Atigrados</h3>
+                        <p>
+                            Un gato con pelaje distintivo que presenta rayas o patrones en remolino.
+                            Usualmente con una marca en forma de "M" en su frente.
+                        </p>
+                        <div class="like-btn">
+                            <button data-msg="¡Has dado me gusta al Gato Atigrado!"> <!-- Se le asigna un data (informacion adicional) al boton para evitar el uso de id´s distintas en el js -->
+                                <span class="contador">56</span>
+                                Me Gusta
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <h1>Golden Retriever</h1>
+                        <h2>Sustantivo</h2>
+                        <h3>Plural: Golden Retrievers</h3>
+                        <p>
+                            Una raza de perro amistoso, inteligente y devota, conocida por su pelaje
+                            dorado y su habilidad para recuperar objetos sin dañarlos.
+                        </p>
+                        <div class="like-btn">
+                            <button data-msg="¡Has dado me gusta al Golden Retriever!">
+                                <span class="contador">6</span>
+                                Me Gusta
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-definicion">
+                <p>Petlopedia este definida por TI.</p>
+                <div class="def-btn">
+                    <button id="def">
+                        Agregar definicion
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
