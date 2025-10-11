@@ -1,4 +1,3 @@
-/* abrir y cerrar sesion */
 /* Se utiliza el DomContenLoades para esperar a que el documento esté completamente cargado */
 document.addEventListener("DOMContentLoaded", function() {
     const loginButton = document.getElementById("login"); /* Se crea una variable inmutable, relacionada con el id del boton  de "Iniciar Sesion" */
