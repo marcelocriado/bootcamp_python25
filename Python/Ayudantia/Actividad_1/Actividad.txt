@@ -1,0 +1,21 @@
+1.- Imprime tu nombre en la pantalla
+
+2.- Crea dos variables y realiza las operaciones de suma, resta, multiplicacion y division.
+    imprime los resultados.
+    bonus: calcula el resto de la division.
+
+3.- Comparacion de dos numeros.
+    Crea dos variables con numeros enteros y muestra su el primero es mayor, menor o igual que el segundo.
+
+4.- Temperatura en celcius a Fahrenheit
+    Pide al usuario que inhrese una temperatura en celcius y conviertela en Fahrenheit. Muestra el resultado.
+    (0 °C * 9/5) + 32 = 35 °F
+
+5.- Par o impar
+    Crea una variable con un numero y verifica si es par o impar. Imprime el resultado.
+
+6.- Calculo del area de un circulo.
+    Crea una variable con el radio de un circulo y calcula su area (usa el valor pi aproximado como 3.1416).
+    Muestra el resultado.
+    Bonus: Usa la libreria math y usa el valor de pi que entrega dicha libreria.
+    Bonus 2: Redondea a 3 los decimales.
