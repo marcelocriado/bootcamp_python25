@@ -1,0 +1,16 @@
+1.- Crear un arreglo llamado "frutas", con 4 elementos en su interior
+    Luego iterar el arreglo
+    Y mostrar cada elemento en la consola
+
+2.- Iterar el arreglo frutas en reversa e imprimir cada elemento
+
+3.- Iterar el arreglo e imprimir cada elemento en orden alfabético
+
+4.- Implementar un contador de 1 a 10 usando While loop
+
+5.- Crear un menú que tenga dos opciones
+    El usuario debe ingresar la opción por terminal 
+    Opción 1 :Imprimir un mensaje 
+    Opción 2 :Salir
+    Para esta tarea utilice un While loop
+    Si ingresa un número diferente a 1 o 2, debe entregar un mensaje de error y mostrar el menú nuevamente
