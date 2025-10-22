@@ -96,3 +96,65 @@ import sys
 #                 print("Operacion cancelada.")
 #         else:
 #                 print("Su saldo es insuficiente.")
+
+#========================================================================
+#Conversion de monedas
+#========================================================================
+# vdae = 0.86
+# vead = 1.16
+# vdap = 952.38
+# veap = 1106.85
+# vpad = 0.0011
+# vpae = 0.00090
+
+# while True:
+#     print("====================")
+#     print("Bienvenido al conversor de monedas")
+#     print("Ingrese la opcion que desea realizar.")
+#     print("1) Dolar a Euro.")
+#     print("2) Euro a dolar.")
+#     print("3) Dolar a peso Chileno.")
+#     print("4) Euro a peso Chileno.")
+#     print("5) Peso Chileno a dolar.")
+#     print("6) Peso Chileno a euro.")
+#     print("0) Salir.")
+#     print("====================")
+
+#     opcion = int(input("Ingrese una opcion: "))
+
+#     if opcion == 0:
+#         print("Gracias por elegirnos, !Vuelva pronto¡")
+#         break
+
+#     elif opcion == 1:
+#         dae = float(input("Ingrese el monto a cambiar: $ "))
+#         v = dae * vdae
+#         print(f"El valor de $", dae," actualmente en euros, es de €", v)
+    
+#     elif opcion == 2:
+#         ead = float(input("Ingrese el monto a cambiar: $ "))
+#         v = ead * vead
+#         print(f"El valor de $", ead," actualmente en euros, es de €", v)
+    
+#     elif opcion == 3:
+#         dap = float(input("Ingrese el monto a cambiar: $ "))
+#         v = dap * vdap
+#         print(f"El valor de $", dap," actualmente en euros, es de €", v)
+    
+#     elif opcion == 4:
+#         eap = float(input("Ingrese el monto a cambiar: $ "))
+#         v = eap * veap
+#         print(f"El valor de $", eap," actualmente en euros, es de €", v)
+    
+#     elif opcion == 5:
+#         pad = float(input("Ingrese el monto a cambiar: $ "))
+#         v = pad * vpad
+#         print(f"El valor de $", pad," actualmente en euros, es de €", v)
+
+#     elif opcion == 6:
+#         pae = float(input("Ingrese el monto a cambiar: $ "))
+#         v = pae * vpae
+#         print(f"El valor de $", pae," actualmente en euros, es de €", v)
+
+#     else:
+#         print("Opcion no encontrada.")
