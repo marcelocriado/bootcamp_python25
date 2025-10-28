@@ -1,9 +1,17 @@
-from flask import Flask  # Importa Flask para permitirnos crear nuestra aplicación
+from flask import Flask, render_template  # Importa Flask para permitirnos crear nuestra aplicación
 app = Flask(__name__)    # Crea una nueva instancia de la clase Flask llamada "app"
 
 @app.route('/')          # El decorador "@" asocia esta ruta con la función inmediatamente siguiente
-def hola_mundo():
-    return '¡Hola Mundo!'  # Devuelve la cadena '¡Hola Mundo!' como respuesta
+def index():
+    return render_template('index.html')  # Devuelve la cadena '¡Hola Mundo!' como respuesta
+
+@app.errorhandler(404)
+def page_not_found(error):
+    return render_template('not_found.html'), 404
+
+@app.route('/not_found')
+def not_found():
+    return render_template('not_found.html')
 
 @app.route('/exito')
 def exito(): #El nombre de la función puede ser el que tú quieras
