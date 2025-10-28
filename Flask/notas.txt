@@ -1,0 +1,6 @@
+Recuerda que debes llamar al modulo para ejecutar flask...
+    || python -m pipenv install flask
+    || python -m pipenv shell
+
+Para salir del entorno virtual.
+    || exit
