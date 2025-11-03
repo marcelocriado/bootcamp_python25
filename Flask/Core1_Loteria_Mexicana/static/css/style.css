@@ -1,0 +1,22 @@
+    #amarillo{
+        background-color: #eadb00;
+    }
+    #azul{
+        background-color: #287fe4;
+    }
+    #rosa{
+        background-color: #dda8c4;
+    }
+    .caja{
+        width: 12vh;
+        height: 20vh;
+        margin: 1vh;
+    }
+    .contenedor{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+    .titulo{
+        text-align: center;
+    }

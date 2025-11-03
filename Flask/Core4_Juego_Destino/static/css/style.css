@@ -1,0 +1,44 @@
+body{
+    margin: 0;
+    padding: 3vh;
+    background-color: black;
+    color: gold;
+}
+.titulo{
+    text-align: center;
+}
+.card{
+    width: 50vh;
+    margin: 0 auto;
+    background-color: rgb(40, 43, 43);
+    border: 2px solid gold;
+    color: gold;
+}
+.card-body input{
+    width: 40vh;
+    margin: 2vh;
+}
+.card-body select{
+    width: 40vh;
+    margin: 2vh;
+}
+.card-body button{
+    position: relative;
+    left: 30%;
+}
+.caja{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 10vh;
+}
+.caja img{
+    width: 60vh;
+    height: 70vh;
+}
+#mensajeFinal {
+    display: none;
+    white-space: pre-line;
+    font-size: 18px;
+    margin-top: 20px;
+}

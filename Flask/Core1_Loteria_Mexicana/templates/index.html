@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablero de loteria</title>
+    <link rel="stylesheet" href= {{ url_for('static', filename='css/style.css') }}>
+</head>
+
+<body>
+    <nav>
+
+    </nav>
+
+    <main>
+        <div class="titulo">
+            <h1>Loteria Mexicana</h1>
+        </div>
+        {% set colores = "#dda8c4", "#287fe4", "#eadb00" %}
+        {% for fila in range(filas) %}
+            <div class="contenedor">
+                {% for columna in range(columnas)%}
+                    {% set indice = (fila + columna) % colores|length %}
+                    <div class="caja" style="background-color: {{ colores[indice] }}"></div>
+                {% endfor %}
+            </div>
+        {% endfor %}
+    </main>
+    
+    <footer>
+
+    </footer>
+</body>
+</html>
