@@ -3,6 +3,7 @@ import random
 class jugador:
     def __init__(self, clase, inventario):
         self.vida = 100
+        self.armadura = 30
         self.clase = clase
         self.inventario = inventario
     
@@ -22,5 +23,3 @@ class jugador:
                 objeto = "Pocion de salud"
             inventario.append(objeto)
         return(inventario)
-
-

@@ -1,0 +1,25 @@
+|| Paises que hablan español ||
+select p.nombre, i.idioma, i.porcentage from paises p join idiomas i on p.codigo = i.codigo_pais where i.idioma = 'Español' order by porcentage desc
+
+|| Cantidad de ciudades y su idioma en cada pais ||
+select p.nombre, i.idioma, count(c.pais_id)"cant ciudades" from paises p join ciudades c on c.pais_id = p.id join idiomas i on i.pais_id = p.id group by p.nombre, i.idioma order by 'cant ciudades' desc
+
+|| Ciudades de Chile con una población mayor a 200,000 ||
+select * from ciudades where codigo_pais = 'CHL' and poblacion >= '200000' order by poblacion desc;
+
+|| Paises con porcentage de idioma mayor al 89% ||
+select p.nombre, i.idioma, i.porcentage from paises p join idiomas i on p.codigo = i.codigo_pais where porcentage >= '89' order by porcentage desc
+ 
+|| Paises con un área de superficie menor a 501 y poblacion mayor a 100,000 ||
+select nombre, area_superficie, poblacion from paises where area_superficie <= '501' and poblacion >= '100000' order by poblacion desc
+
+|| Paises en el que el tipo de gobierno es Republica, un capital superior a 2000 y una esperanza de vida mayor a 78 años ||
+select nombre, tipo_gobierno, esperanza_vida, capital from paises where tipo_gobierno = 'República' and esperanza_vida >= '78' and capital >= '2000'
+
+|| Ciudades de Colombia dentro del distrito de Valle con una población mayor a 200,000 ||
+select p.nombre, c.nombre, c.distrito, c.poblacion from ciudades c join paises p on c.pais_id = p.id where c.codigo_pais = 'COL' and c.distrito = 'Valle' and c.poblacion >= '200000'
+
+|| Numero de países en cada region ||
+select region, count(nombre)'cant paises' from paises group by region order by count(nombre) desc
+
+

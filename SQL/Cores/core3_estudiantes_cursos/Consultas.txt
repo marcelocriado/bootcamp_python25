@@ -1,0 +1,36 @@
+|| Creacion de los 3 cursos ||
+insert into cursos (nombre, created_at, updated_at) values ('informatica', '2025-11-13', '2025-11-13');
+insert into cursos (nombre, created_at, updated_at) values ('artes', '2025-11-13', '2025-11-13');
+insert into cursos (nombre, created_at, updated_at) values ('biologia', '2025-11-13', '2025-11-13');
+
+|| Borrar los tres cursos ||
+delete from cursos where created_at = '2025-11-13';
+
+|| Creacion de los 3 cursos nuevos ||
+insert into cursos (nombre, created_at, updated_at) values ('matematicas', '2025-11-13', '2025-11-13');
+insert into cursos (nombre, created_at, updated_at) values ('lenguaje', '2025-11-13', '2025-11-13');
+insert into cursos (nombre, created_at, updated_at) values ('ingles', '2025-11-13', '2025-11-13');
+
+|| Creacion de 3 estudiantes en el primer curso ||
+insert into estudiantes (nombre, apellido, edad, created_at, updated_at, curso_id) values ('rodrigo', 'silva', '16', '2025-11-13', '2025-11-13', 4);
+insert into estudiantes (nombre, apellido, edad, created_at, updated_at, curso_id) values ('pamela', 'rojas', '15', '2025-11-13', '2025-11-13', 4);
+insert into estudiantes (nombre, apellido, edad, created_at, updated_at, curso_id) values ('rosa', 'tapia', '16', '2025-11-13', '2025-11-13', 4);
+
+|| Creacion de 3 estudiantes en el segundo curso ||
+insert into estudiantes (nombre, apellido, edad, created_at, updated_at, curso_id) values ('juan', 'espinoza', '16', '2025-11-13', '2025-11-13', 5);
+insert into estudiantes (nombre, apellido, edad, created_at, updated_at, curso_id) values ('felipe', 'ibaceta', '15', '2025-11-13', '2025-11-13', 5);
+insert into estudiantes (nombre, apellido, edad, created_at, updated_at, curso_id) values ('barbara', 'collao', '16', '2025-11-13', '2025-11-13', 5);
+
+|| Creacion de 3 estudiantes en el tercer curso ||
+insert into estudiantes (nombre, apellido, edad, created_at, updated_at, curso_id) values ('elena', 'lobos', '16', '2025-11-13', '2025-11-13', 6);
+insert into estudiantes (nombre, apellido, edad, created_at, updated_at, curso_id) values ('tatiana', 'collado', '15', '2025-11-13', '2025-11-13', 6);
+insert into estudiantes (nombre, apellido, edad, created_at, updated_at, curso_id) values ('eduardo', 'criado', '16', '2025-11-13', '2025-11-13', 6);
+
+|| Recuperar los estudaintes inscritos en el primer curso ||
+select * from estudiantes where curso_id = 4;
+
+|| Recuperar los estudiantes inscritos en el tercer curso ||
+select * from estudiantes where curso_id = 6;
+
+|| Recuperar el curso del ultimo estudiante ||
+select c.id, c.nombre, e.nombre, e.apellido from cursos c join estudiantes e on c.id = e.curso_id order by e.id desc limit 1;
