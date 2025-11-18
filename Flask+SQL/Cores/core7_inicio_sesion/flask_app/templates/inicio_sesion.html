@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href= {{ url_for('static', filename='css/style.css') }}>
+    <title>Iniciar Sesion</title>
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            <div class="caja">
+                {% for message in messages %}
+                    <div class="mensaje">
+                        {{ message }}
+                    </div>
+                {% endfor %}
+            </div>
+        {% endif %}
+    {% endwith %}
+</head>
+<body>
+    <main>
+        <div class="container col-4">
+            <h2>Iniciar sesion</h2>
+            <div class="card">
+                <div class="card-body">
+                    <form action="/login" method="POST"  autocomplete="off">
+                        <label>Email:</label>
+                        <input type="text" name="email" placeholder="email@gmail.com" required><br>
+                        <label>Contraseña:</label>
+                        <input type="password" name="contrasenia" placeholder="********" required><br>
+                        <input type="submit" value="Iniciar Sesion" >
+                    </form>
+                </div>
+                <a href="{{ url_for('registro') }}" style="text-align: center;">¿No tienes una cuenta?</a>
+                <br>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
